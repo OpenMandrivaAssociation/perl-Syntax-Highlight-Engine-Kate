@@ -55,3 +55,13 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Thu Sep 17 2009 Jérôme Quelin <jquelin@mandriva.org> 0.60.0-1mdv2010.0
++ Revision: 444023
+- import perl-Syntax-Highlight-Engine-Kate
+
+
+* Thu Sep 17 2009 cpan2dist 0.06-1mdv
+- initial mdv release, generated with cpan2dist
