@@ -1,15 +1,15 @@
 %define upstream_name    Syntax-Highlight-Engine-Kate
-%define upstream_version 0.06
+%define upstream_version 0.08
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Version:    %perl_convert_version 0.08
+Release:    1
 
 Summary:    A Plugin for Component-Pascal syntax highlighting
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Syntax/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Syntax/Syntax-Highlight-Engine-Kate-0.08.tar.gz
 
 BuildRequires: perl(Carp)
 BuildRequires: perl(Data::Dumper)
@@ -65,3 +65,4 @@ rm -rf %buildroot
 
 * Thu Sep 17 2009 cpan2dist 0.06-1mdv
 - initial mdv release, generated with cpan2dist
+
