@@ -1,3 +1,4 @@
+%define debug_package %{nil}
 %define upstream_name    Syntax-Highlight-Engine-Kate
 %define upstream_version 0.08
 
