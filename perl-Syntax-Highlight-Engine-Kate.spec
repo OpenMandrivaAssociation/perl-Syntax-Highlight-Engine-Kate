@@ -4,7 +4,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    1
+Release:    2
 
 Summary:    A Plugin for Component-Pascal syntax highlighting
 License:    GPL+ or Artistic
