@@ -12,6 +12,7 @@ Group:      Development/Perl
 Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Syntax/Syntax-Highlight-Engine-Kate-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires: perl(Carp)
 BuildRequires: perl(Test::Differences)
 BuildRequires: perl(Data::Dumper)
