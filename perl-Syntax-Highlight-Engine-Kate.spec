@@ -1,16 +1,14 @@
 %define debug_package %{nil}
 %define upstream_name    Syntax-Highlight-Engine-Kate
-%define upstream_version 0.08
-
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Version:    0.08
+Release:    4
 
 Summary:    A Plugin for Component-Pascal syntax highlighting
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Syntax/Syntax-Highlight-Engine-Kate-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Syntax/Syntax-Highlight-Engine-Kate-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Carp)
@@ -34,7 +32,7 @@ Syntax::Highlight::Engine::Kate inherits
 Syntax::Highlight::Engine::Kate::Template.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
